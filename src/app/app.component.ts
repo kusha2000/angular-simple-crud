@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormGroup,FormControl,Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-simple-crud';
+  customerForm=new FormGroup({
+    name:new FormControl('',[Validators.required]),
+    address:new FormControl('',[Validators.required]),
+    salary:new FormControl('',[Validators.required]),
+  });
+
+  saveCustomer(){
+    console.log(this.customerForm);
+  }
 }
