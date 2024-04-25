@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms'; // For template-driven forms
 // OR
 import { ReactiveFormsModule } from '@angular/forms'; // For reactive forms
+import { AngularFireModule } from '@angular/fire/compat';
+import { environment } from 'src/environments/environment.development';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 
 
 @NgModule({
@@ -16,7 +19,9 @@ import { ReactiveFormsModule } from '@angular/forms'; // For reactive forms
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

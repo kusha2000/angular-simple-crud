@@ -28,3 +28,25 @@
       </div>
     </div>
   </form>
+
+  <hr>
+
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>#ID</th>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Salary</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let tempCustomer of customerList">
+        <td>{{tempCustomer.id}}</td>
+        <td>{{tempCustomer.name}}</td>
+        <td>{{tempCustomer.address}}</td>
+        <td>{{tempCustomer.salary}}</td>
+
+      </tr>
+    </tbody>
+  </table>
