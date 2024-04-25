@@ -9,11 +9,15 @@ import { ReactiveFormsModule } from '@angular/forms'; // For reactive forms
 import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from 'src/environments/environment.development';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { UpdateCustomerComponent } from './components/update-customer/update-customer.component';
+import { NewCustomerComponent } from './components/new-customer/new-customer.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UpdateCustomerComponent,
+    NewCustomerComponent
   ],
   imports: [
     BrowserModule,
