@@ -1,27 +1,39 @@
-# AngularSimpleCrud
+# Angular Simple Crud
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.9.
+This is a basic CRUD (Create, Read, Update, Delete) application built with Angular, Firebase, and styled using Bootstrap. The application allows users to manage a list of users, including their names, addresses, and salaries.
 
-## Development server
+Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<ul>
+<li>Add Users: Input a name, address, and salary to add a new user to the list.</li>
+<li>Display Users: View the list of users in a dynamically updated table.</li>
+<li>Update Users: Edit the details of existing users.</li>
+<li>Delete Users: Remove users from the list.</li>
+</ul>
 
-## Code scaffolding
+Technologies Used
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<ul>
+<li>Angular: For building the dynamic front-end application.</li>
+<li>Firebase: For real-time database and backend support.</li>
+<li>Bootstrap: For responsive and modern CSS styling.</li>
+</ul>
 
-## Build
+<h1>This is the Full Demo of the project</h1>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+![Demo](https://github.com/kusha2000/angular-simple-crud/assets/127003267/e3a2ca78-6959-4d09-b2e4-2494ce612fbb)
 
-## Running unit tests
+<br><br>
+<h1>This is the screenshots of the system</h1><br><br>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![1](https://github.com/kusha2000/angular-simple-crud/assets/127003267/54da916c-67b2-4d7d-ba06-79dc6e85eedc)<br><br>
 
-## Running end-to-end tests
+![2](https://github.com/kusha2000/angular-simple-crud/assets/127003267/0bc18223-47f6-4724-bd48-36b4f6a2de77)<br><br>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+![3](https://github.com/kusha2000/angular-simple-crud/assets/127003267/7c445d71-ae9f-4524-9291-cf5af66d834d)<br><br>
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+
+
