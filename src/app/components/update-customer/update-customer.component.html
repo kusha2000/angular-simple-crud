@@ -1,28 +1,28 @@
-<form [formGroup]="customerForm" (ngSubmit)="updateCustomer()">
+<form [formGroup]="customerForm" (ngSubmit)="updateCustomer()" style="background-color: green;border-radius: 20px; margin: auto;margin-top: 20px; padding: 20px;width: 60%;display: flex;justify-content: center;align-items: center;">
     <div class="container">
       <div class="row">
         <div class="col-4">
           <div class="form-group">
-            <label for="name">Name</label>
+            <label for="name" style="color: black;font-size: 20px;font-weight: 800;">Name</label>
             <input type="text" class="form-control" formControlName="name" id="name">
           </div>
         </div>
         <div class="col-4">
           <div class="form-group">
-            <label for="name">Address</label>
+            <label for="name" style="color: black;font-size: 20px;font-weight: 800;">Address</label>
             <input type="text" class="form-control" formControlName="address" id="address">
           </div>
         </div>
         <div class="col-4">
           <div class="form-group">
-            <label for="name">Salary</label>
+            <label for="name" style="color: black;font-size: 20px;font-weight: 800;">Salary</label>
             <input type="text" class="form-control" formControlName="salary" id="salary">
           </div>
         </div>
         <div class="col-12">
           <div class="form-group">
             <br>
-            <input type="submit" class="btn btn-success col-12" [disabled]="customerForm.invalid"  value="Update Customer">
+            <input type="submit" class="btn btn-warning col-12" [disabled]="customerForm.invalid"  value="Update Customer">
           </div>
         </div>
       </div>
