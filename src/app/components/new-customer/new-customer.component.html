@@ -46,22 +46,22 @@ padding-left: 60px;">
 
 
   <table class="table table-hover" style="margin: auto;width:90%">
-    <thead style="">
+    <thead>
       <tr style="border: 1px solid black;">
-        <th style="text-align: center;border: 1px solid white;background-color: black;color: white;">#ID</th>
-        <th style="text-align: center;border: 1px solid white;background-color: black;color: white;">Name</th>
-        <th style="text-align: center;border: 1px solid white;background-color: black;color: white;">Address</th>
-        <th style="text-align: center;border: 1px solid white;background-color: black;color: white;">Salary</th>
-        <th style="text-align: center;border: 1px solid white;background-color: black;color: white;">Update</th>
-        <th style="text-align: center;border: 1px solid white;background-color: black;color: white;">Delete</th>
+        <th style="text-align: center;border: 1px solid white;background-color: black;color: white;font-weight: 800;font-size: 23px;">#ID</th>
+        <th style="text-align: center;border: 1px solid white;background-color: black;color: white;font-weight: 800;font-size: 23px;">Name</th>
+        <th style="text-align: center;border: 1px solid white;background-color: black;color: white;font-weight: 800;font-size: 23px;">Address</th>
+        <th style="text-align: center;border: 1px solid white;background-color: black;color: white;font-weight: 800;font-size: 23px;">Salary</th>
+        <th style="text-align: center;border: 1px solid white;background-color: black;color: white;font-weight: 800;font-size: 23px;">Update</th>
+        <th style="text-align: center;border: 1px solid white;background-color: black;color: white;font-weight: 800;font-size: 23px;">Delete</th>
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let tempCustomer of customerList" style="border: 1px solid black;">
-        <td  style="text-align: center;border: 1px solid black;">{{tempCustomer.id}}</td>
-        <td style="text-align: center;border: 1px solid black;">{{tempCustomer.name}}</td>
-        <td style="text-align: center;border: 1px solid black;">{{tempCustomer.address}}</td>
-        <td style="text-align: center;border: 1px solid black;">{{tempCustomer.salary}}</td>
+        <td  style="text-align: center;border: 1px solid black;font-size: 20px;">{{tempCustomer.id}}</td>
+        <td style="text-align: center;border: 1px solid black;font-size: 20px;">{{tempCustomer.name}}</td>
+        <td style="text-align: center;border: 1px solid black;font-size: 20px;">{{tempCustomer.address}}</td>
+        <td style="text-align: center;border: 1px solid black;font-size: 20px;">{{tempCustomer.salary}}</td>
         <td style="text-align: center;border: 1px solid black;"><button class="btn btn-success" routerLink="/update/{{tempCustomer.id}}">Update Customer</button></td>
         <td style="text-align: center;border: 1px solid black;"><button class="btn btn-danger" (click)="deleteCustomer(tempCustomer.id)">Delete Customer</button></td>
 
